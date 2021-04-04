@@ -1,0 +1,383 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: MarioFont,Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+@font-face{
+    font-family: MarioFont;
+    src: url(./assets/fonts/SuperMario256.ttf);
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: url("./assets/images/bg.jpg");
+    background-size: cover;
+    position: absolute;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    width: 50%;
+    height: 100%;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moldure{
+    position: absolute;
+}
+
+.info{
+    width: 40%;
+    height: 80%;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.points-container{
+    width: 100%;
+
+    position: absolute;
+    top: -60px;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.points{
+    width: 250px;
+
+    border-radius: 15px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.points .title{
+    font-size: 32px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    letter-spacing: 3px;
+    position: relative;
+    top: 25px;
+}
+
+.points .number-point{
+    position: relative;
+    top: 65px;
+    font-size: 42px;
+    color: #772404;
+    text-shadow: 2px 2px 1px black;
+}
+
+.config{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    position: absolute;
+    top: 110px;
+}
+
+.disable{
+    top: 0px;
+    height:420px;
+    width: 550px;
+    position: absolute;
+    background-color: rgba(255,255,255,.5);
+    z-index: 10;
+    border-radius: 30px;
+    cursor: not-allowed
+}
+
+.length-config{
+    width: 300px;
+    text-align: center;
+}
+
+.length-config .title{
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    letter-spacing: 3.5px;
+}
+
+.buttons{
+    width: 300px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button{
+    width: 50px;
+    position: relative;
+    top: 15px;
+    cursor: pointer;
+}
+.sub{
+    right: 40px;
+    transform: rotateY(180deg);
+}
+.add{
+    right: -40px;
+}
+
+.range{
+    width: 100%;
+}
+
+.range img{
+    width: 100%;
+    height: 40px;
+}
+
+.dificulty-container{
+    background: url("./assets/images/board.png");
+    background-size: cover;
+    width: 250px;
+    height: 90px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dificult-select{
+    position: relative;
+    top: 15px;
+}
+
+.dificulty-p{
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    letter-spacing: 3.5px;
+    font-size: 16px;
+}
+
+.square-btn{
+    width: 50px;
+    position: relative;
+    top: -2px;
+    cursor: pointer;
+}
+
+.keys{
+    width: 250px;
+    height: 180px;
+    background: url("./assets/images/moves.png");
+    background-size: cover;
+    z-index: 11;
+}
+
+.row{
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.restart{
+    width: 250px;
+    height: 72px;
+    background:url("./assets/images/restart.png");
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    top: 1;
+}
+
+.restart p{
+    font-size: 25px;
+    position: relative;
+    top: -3px;
+    left: 25px;
+    color: #772404;
+    text-shadow: 2px 2px 1px black;
+    letter-spacing: 3px;
+}
+
+.start-game {
+    background-image: url("./assets/images/start.png");
+    background-size: cover;
+    width: 269px;
+    height: 85px;
+    position: absolute;
+    top: 24%;
+    left: 24%;
+    transform: translate(-24%);
+    z-index: 90;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.start-game p{
+    font-size: 40px;
+    color: #772404;
+    text-shadow: 2px 2px 1px black;
+}
+
+.restart-btn-cnv{
+    background-image: url("./assets/images/restart.png");
+    background-size: cover;
+    width: 295px;
+    height: 85px;
+    position: absolute;
+    top: 24%;
+    left: 24%;
+    transform: translate(-24%);
+    z-index: 90;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.restart-btn-cnv p{
+    margin-left: 50px;
+    font-size: 32px;
+    color: #772404;
+    text-shadow: 2px 2px 1px black;
+}
+
+.aside-buttons {
+   position: absolute;
+   top: 50%;
+   left: 0;
+   transform: translateY(-50%);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: start;
+   z-index: 99;
+   cursor: pointer;
+}
+
+.aside-buttons div:first-child{
+    display: flex;
+}
+
+.toggle-menu{
+    display: none;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url("./assets/images/square_on.png");
+    background-size: cover;
+    left: 0px;
+    width: 80px;
+    height: 80px;
+}
+
+.icon i{
+    position: relative;
+    top: -6px;
+    left: 2px;;
+    text-align: center;
+    font-size: 40px;
+    color: #772404;
+    text-shadow: 2px 2px 1px black;
+    letter-spacing: 5px;
+}
+
+.author{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 98;
+}
+.author div{
+    background-image: url("./assets//images/board3.png");
+    background-size: cover;
+    width: 600px;
+    height: 435px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.author div span{
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    text-shadow: 2px 2px 1px #000;
+    margin-bottom: 20px;
+}
+
+.author div span a{
+    color: lawngreen;
+}
+.author div span a:hover{
+    color: green;
+}
+
+@media screen and (max-width: 1150px){
+    /* body{
+        margin: 40px 0;
+    } */
+    .info{
+        padding-top: 20px;
+        position: absolute;
+        z-index: 98;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.5);;
+        backdrop-filter: blur(5px);
+        display: none;
+    }
+    .points-container{
+        top: -5px;
+    }
+    .config{
+        top: 170px;
+    }
+    .toggle-menu{
+        display: block;
+    }
+    .start-game, .restart-btn-cnv{
+        top: 24%;
+        left: 42%;
+    }
+}

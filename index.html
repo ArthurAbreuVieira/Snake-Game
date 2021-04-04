@@ -1,0 +1,76 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css"/>
+        <script defer src="./game.js"></script>
+        <script defer src="./events.js"></script>
+        <title>Snake Game</title>
+    </head>
+    <body>
+        <main>
+            <div class="aside-buttons">
+                <div>
+                    <div class="icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                </div>
+                <div class="toggle-menu">
+                    <div class="icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="game">
+                <img src="./assets/images/moldure.png" class="moldure"/>
+                <canvas id="canvas"></canvas>
+                <div class="start-game">
+                    <p>Start</p>
+                </div>
+            </div>
+            <div class="info">
+                <div class="points-container">
+                    <div class="points">
+                        <p class="title">Pontuacao</p>
+                        <p class="number-point score">0</p>
+                        <img src="./assets/images/board.png" alt="">
+                    </div>
+                    <div class="points">
+                        <p class="title">Tamanho</p>
+                        <p class="number-point length">3</p>
+                        <img src="./assets/images/board.png" alt="">
+                    </div>
+                </div>
+                <div class="config">
+                    <div class="length-config">
+                        <p class="title">Tamanho inicial</p>
+                        <div class="buttons">
+                            <img class="button sub" data-clickSound="click" src="./assets/images/arrow-button.png" alt="">
+                            <img class="button add" data-clickSound="click" src="./assets/images/arrow-button.png" alt="">
+                        </div>
+                        <div class="range">
+                            <img class="range-img" src="./assets/images/range-value3.png" alt="">
+                            <img class="range-img" src="./assets/images/range-value0.png" alt="">
+                        </div>
+                    </div>
+                    <div class="points dificult-select">
+                        <p class="dificulty-p">Dificuldade: Medio</p>
+                        <div class="dificulty-container">
+                            <img class="square-btn" data-sound="click" src="./assets/images/square_on.png" alt="">
+                            <img class="square-btn" data-sound="click" src="./assets/images/square_on.png" alt="">
+                            <img class="square-btn" data-sound="click" src="./assets/images/square_off.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="keys"></div>
+                        <div class="restart">
+                            <p>Restart</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/0b3d3ca34d.js" crossorigin="anonymous"></script>
+    </body>
+</html>
