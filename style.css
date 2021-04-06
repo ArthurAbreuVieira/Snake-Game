@@ -353,6 +353,31 @@ main{
     color: green;
 }
 
+.warn{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.warn div{
+    background-color: rgba(0,0,0,.6);
+    border-radius: 40px;
+    width: 98%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 5px #000;
+}
+
+.warn div p{
+    color: white;
+    font-size: 16px;
+    text-shadow: 3px 3px 5px #000;
+    text-align: center;
+}
+
 @media screen and (max-width: 1150px){
     /* body{
         margin: 40px 0;

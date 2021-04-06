@@ -178,7 +178,7 @@ window.addEventListener("resize", ()=>{
         if(!body.contains(document.querySelector(".warn"))){
             const warn = document.createElement("div");
             warn.classList.add("warn");
-            warn.innerHTML = `<span>O jogo não é compativel com esse tamanho de tela!</span>`;
+            warn.innerHTML = `<div><p>O jogo nao e compativel com esse tamanho de tela!</p></div>`;
             body.appendChild(warn);
             main.style.display = "none";
         }
