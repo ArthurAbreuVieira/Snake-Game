@@ -149,7 +149,7 @@ githubButton.addEventListener("mousedown", ()=>{
         info.innerHTML = `
             <div>
                 <span>Desenvolvido por <a href="https://github.com/arthurabreuvieira" target="_blank">Arthur Abreu Vieira Mendes</a></span>
-                <span>Codigo disponivel no <a href="repositorio" target="_blank">repositorio do jogo no GitHub</a></span>
+                <span>Codigo disponivel no <a href="https://github.com/ArthurAbreuVieira/Snake-Game" target="_blank">repositorio do jogo no GitHub</a></span>
              </div>
         `;
         main.appendChild(info);
