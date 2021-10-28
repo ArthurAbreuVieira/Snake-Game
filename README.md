@@ -12,3 +12,4 @@
 #### * ✅ CSS
 -------------------
 # Imagens do projeto
+<image src="./assets/images/example.gif"/>
